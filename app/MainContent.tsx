@@ -13,6 +13,8 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { gsap } from "gsap";
+import logo from "../public/IIT Patna logo without background.png";
+import Image from "next/image";
 
 function MainContent() {
   const router = useRouter();
@@ -155,11 +157,7 @@ function MainContent() {
             className="flex items-center gap-4 cursor-pointer"
             onClick={() => router.push("/")}
           >
-            <img
-              src="https://www.iitp.ac.in/images/iitp_logo.png"
-              alt="IITP"
-              className="h-14"
-            />
+            <Image src={logo} alt="IITP" className="h-14" />
             <div className="hidden md:block text-left">
               <h1 className="text-[#003366] font-black text-xl leading-none">
                 IIT PATNA

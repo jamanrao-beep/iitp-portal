@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { gsap } from "gsap";
 
-export default function MainContent() {
+function MainContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const activeTab = searchParams.get("type") || "Latest";
@@ -358,3 +358,5 @@ export default function MainContent() {
     </div>
   );
 }
+
+export default MainContent;
